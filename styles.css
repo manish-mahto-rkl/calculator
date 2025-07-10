@@ -1,0 +1,147 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #eee;
+  line-height: 1.6;
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+header {
+  background: #1f1f1f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a.active {
+  color: #00bcd4;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #252525;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about {
+  max-width: 700px;
+  margin: auto;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: auto;
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: #2a2a2a;
+  color: #eee;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #00bcd4;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #1f1f1f;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #aaa;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1f1f1f;
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    width: 150px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+#pic{
+    width: 100%;
+    /* height: 60%; */
+}
+.laptop{
+    width: 100%;
+}
